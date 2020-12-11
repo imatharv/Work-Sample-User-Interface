@@ -1,0 +1,17 @@
+$bg-purple : #b004d3;
+$text-white : #fff;
+$mt-10 : 200px;
+$mb-10 : 200px;
+$pt-10 : 200px;
+$pb-10 : 200px;
+
+.section-test {
+    background-color: $bg-purple;
+    margin-top: $mt-10;
+    margin-bottom: $mb-10;
+    .display-1 {
+        padding-top: $pt-10;
+        padding-bottom: $pb-10;
+        color: $text-white;
+    }
+}

@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mainStyle.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Assets/ADA.png">
+    <title>Cryptocurrencies Trading Platform - Centralex</title>
+</head>
+<body>
+    <div class="">
+        <header>
+            <nav class="navbar nav-scroll navbar-expand-lg navbar-dark bg-primary">
+                <div class="nav-centered container px-md-5">
+                    <a class="navbar-brand" href="#">
+                        <img src="Centralex-symbol-white.png" height="35" width="40" />
+                        <img class="ml-2" src="centralex-text.png" height="15" width="100" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">EXCHANGE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BUY CRYPTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    DOWNLOAD APP <i class="fa fa-mobile ml-1 shadow-sm" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="form-inline my-2 my-lg-0">
+                            <div class="dropdown mr-sm-2">
+                                <a class="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;">
+                                    <img src="Ellipse 7.png" alt="User details" height="40" width="40" />
+                                    <span class="text-light ml-2">John</span>
+                                    <i class="fa fa-caret-down text-light ml-1" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu mt-3 py-2 shadow text-center" aria-labelledby="dropdownMenuLink">
+                                    <p class="font-weight-bold mb-0">John Doe</p>
+                                    <hr class="my-2" />
+                                    <a class="btn dropdown-item bg-light mb-1">View Profile</a>
+                                    <a class="btn dropdown-item bg-light mb-2">Update Details</a>
+                                    <button class="btn btn-sm btn-danger shadow-sm">Logout</button>
+                                </div>
+                            </div>
+                            <div class="dropdown ml-sm-2 ml-4">
+                                <a class="ml-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-bell my-2 my-sm-0 ml-md-4 text-light" style="font-size:20px;" aria-hidden="true" ></i>
+                                    <span class="badge badge-danger shadow-sm" style="padding: .2em .4em !important;border-radius: 1rem;margin-left: -10px;margin-top:4px">4</span> 
+                                </a>
+                                <div class="dropdown-menu text-center mt-4 p-0 shadow" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item m-0" href="#">notification 1</a>
+                                    <hr class="my-0" />
+                                    <a class="dropdown-item m-0" href="#">notification 2</a>
+                                    <hr class="my-0" />
+                                    <a class="dropdown-item m-0" href="#">notification 3</a>
+                                    <hr class="my-0" />
+                                    <a class="dropdown-item m-0" href="#">notification 4</a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="bg-primary vw-100 position-absolute"
+             style="min-height:450px;z-index:-2 !important">
+        </div>
+        <div class="header-image" style="z-index:-1;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 0 25.384 21.514" opacity="0.15">
+                <defs>
+                    <style>
+                        .b {
+                            fill: url(#b);
+                        }
+                    </style>
+                    <linearGradient id="b" x1="0.931" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+                        <stop offset="0" stop-color="#fff" />
+                    </linearGradient>
+                </defs>
+                <g transform="translate(0 0)">
+                    <g transform="translate(1.935 5.101)">
+                        <path class="b" d="M5.673,11.346A5.673,5.673,0,1,0,0,5.673,5.673,5.673,0,0,0,5.673,11.346Zm0-1.161a4.512,
+            4.512,0,1,1,4.512-4.512A4.512,4.512,0,0,1,5.673,10.185Z" transform="translate(0 0)" />
+                        <path class="b" d="M5.673,0A5.673,5.673,0,1,1,0,5.673,5.673,5.673,0,0,1,5.673,0Zm0,1.161a4.512,4.512,0,1,
+            0,4.512,4.512A4.512,4.512,0,0,0,5.673,1.161Z" transform="translate(21.514 11.346) rotate(180)" />
+                    </g>
+                    <g transform="translate(7.001)">
+                        <path class="b" d="M5.673,11.346A5.673,5.673,0,1,0,0,5.673,5.673,5.673,0,0,0,5.673,11.346Zm0-1.161a4.512,
+            4.512,0,1,1,4.512-4.512A4.512,4.512,0,0,1,5.673,10.185Z" transform="translate(11.346) rotate(90)" />
+                    </g>
+                    <rect class="b" width="25.384" height="1.161" transform="translate(0 10.168)" />
+                </g>
+            </svg>
+        </div>
+        <div class="header-content" style="z-index:2 !important;">
+            <div class="justify-content-center">
+                <div class="container">
+                    <div class="pt-md-5 pb-md-5 pt-3 pb-5 px-2">
+                        <div class="row justify-content-center text-white mt-5">
+                            <h1 class="display-4 text-center mb-3">
+                                Buy and sell cryptocurrency
+                            </h1>  
+                            <p class="sub-heading lead font-weight-bold mb-4">
+                                most easy place to trade and manage your cryptocurrency portfolio
+                            </p>
+                        </div>
+                        <div class="row justify-content-center pb-md-5">
+                            <div class="mb-5">
+                                <form class="form-inline justify-content-center">
+                                    <input type="email" class="form-control shadow mb-3" placeholder="Enter your email id" required />
+                                    <button type="submit" class="ml-2 btn btn-warning mb-3 font-weight-normal shadow">Let's Begin</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container px-2 pb-md-5 pb-3">
+            <div class="row justify-content-center mx-3">
+                <div class="card bg-light w-100 shadow border-0 pt-2"
+                     style="margin-top:-100px">
+                    <div class="">
+                        <table class="table table-hover table-responsive-md mb-0">
+                            <thead class="text-primary" style="background-color: #cfebff">
+                                <tr>
+                                    <th scope="col" colspan="2">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Changes</th>
+                                    <th scope="col">Market Cap</th>
+                                    <th scope="col">Trade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="text-nowrap">
+                                        <img src="BTC.png" height="20" width="20" class="img-fluid" />
+                                        <span class="font-weight-bold ml-2">BTC</span>
+                                    </td>
+                                    <td class="text-left w-25">Bitcoin</td>
+                                    <td>$9421.45</td>
+                                    <td class="text-danger">-0.30%</td>
+                                    <td>9421.45</td>
+                                    <td class="pt-2">
+                                        <div class="alert alert-success btn btn-sm py-1 px-4 mt-1 mb-0">
+                                            <span class="small font-weight-bold text-success">BUY</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="text-nowrap">
+                                        <img src="BTC.png" height="20" width="20" class="img-fluid" />
+                                        <span class="font-weight-bold ml-2">BTC</span>
+                                    </td>
+                                    <td class="text-left w-25">Bitcoin</td>
+                                    <td>$9421.45</td>
+                                    <td class="text-danger">-0.30%</td>
+                                    <td>9421.45</td>
+                                    <td class="pt-2">
+                                        <div class="alert alert-success btn btn-sm py-1 px-4 mt-1 mb-0">
+                                            <span class="small font-weight-bold text-success">BUY</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="text-nowrap">
+                                        <img src="BTC.png" height="20" width="20" class="img-fluid" />
+                                        <span class="font-weight-bold ml-2">BTC</span>
+                                    </td>
+                                    <td class="text-left w-25">Bitcoin</td>
+                                    <td>$9421.45</td>
+                                    <td class="text-danger">-0.30%</td>
+                                    <td>9421.45</td>
+                                    <td class="pt-2">
+                                        <div class="alert alert-success btn btn-sm py-1 px-4 mt-1 mb-0">
+                                            <span class="small font-weight-bold text-success">BUY</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="text-nowrap">
+                                        <img src="BTC.png" height="20" width="20" class="img-fluid" />
+                                        <span class="font-weight-bold ml-2">BTC</span>
+                                    </td>
+                                    <td class="text-left w-25">Bitcoin</td>
+                                    <td>$9421.45</td>
+                                    <td class="text-danger">-0.30%</td>
+                                    <td>9421.45</td>
+                                    <td class="pt-2">
+                                        <div class="alert alert-success btn btn-sm py-1 px-4 mt-1 mb-0">
+                                            <span class="small font-weight-bold text-success">BUY</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="text-nowrap">
+                                        <img src="BTC.png" height="20" width="20" class="img-fluid" />
+                                        <span class="font-weight-bold ml-2">BTC</span>
+                                    </td>
+                                    <td class="text-left w-25">Bitcoin</td>
+                                    <td>$9421.45</td>
+                                    <td class="text-danger">-0.30%</td>
+                                    <td>9421.45</td>
+                                    <td class="pt-2">
+                                        <div class="alert alert-success btn btn-sm py-1 px-4 mt-1 mb-0">
+                                            <span class="small font-weight-bold text-success">BUY</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody class="collapse" id="collapseExample">
+                                <tr>
+                                    <td scope="row" class="flex-nowrap">
+                                        <img src="BTC.png" height="20" width="20" class="img-fluid" />
+                                        <span class="font-weight-bold ml-2">BTC</span>
+                                    </td>
+                                    <td class="text-left w-25">Bitcoin</td>
+                                    <td>$9421.45</td>
+                                    <td class="text-danger">-0.30%</td>
+                                    <td>9421.45</td>
+                                    <td class="pt-2">
+                                        <div class="alert alert-success btn btn-sm py-1 px-4 mt-1 mb-0">
+                                            <span class="small font-weight-bold text-success">BUY</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="flex-nowrap">
+                                        <img src="BTC.png" height="20" width="20" class="img-fluid" />
+                                        <span class="font-weight-bold ml-2">BTC</span>
+                                    </td>
+                                    <td class="text-left w-25">Bitcoin</td>
+                                    <td>$9421.45</td>
+                                    <td class="text-danger">-0.30%</td>
+                                    <td>9421.45</td>
+                                    <td class="pt-2">
+                                        <div class="alert alert-success btn btn-sm py-1 px-4 mt-1 mb-0">
+                                            <span class="small font-weight-bold text-success">BUY</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="flex-nowrap">
+                                        <img src="BTC.png" height="20" width="20" class="img-fluid" />
+                                        <span class="font-weight-bold ml-2">BTC</span>
+                                    </td>
+                                    <td class="text-left w-25">Bitcoin</td>
+                                    <td>$9421.45</td>
+                                    <td class="text-danger">-0.30%</td>
+                                    <td>9421.45</td>
+                                    <td class="pt-2">
+                                        <div class="alert alert-success btn btn-sm py-1 px-4 mt-1 mb-0">
+                                            <span class="small font-weight-bold text-success">BUY</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <span class="text-center" style="cursor: pointer;">
+                    <i class="fa bg-warning fa-2x fa-chevron-down text-secondary position-relative p-2"
+                       aria-hidden="true"
+                       style="border-radius:24px;margin-top:-30px;"
+                       data-toggle="collapse" data-target="#collapseExample"
+                       aria-expanded="false" aria-controls="collapseExample">
+                    </i>
+                </span>
+            </div>
+        </section>
+        <section class="container py-md-5 py-3">
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-5 align-items-center">
+                    <div class="card border-0 referral-content bg-transparent">
+                        <div class="card-body">
+                            <h2 class="card-title mb-2">
+                                Earn referral up to $10 worth of crypto
+                            </h2>
+                            <div class="mb-2"><i class="fa fa-minus text-warning" style="font-size:25px;font-weight: 300 !important;"></i></div>
+                            <p class="card-subtitle mb-4 lead">
+                                Once your friend will buy or cell $100 of cryptocurrency,
+                                you will both get $10 of free bitcoin.
+                            </p>
+                            <a class="btn btn-primary py-2 px-4 font-weight-normal shadow" href="#" style="letter-spacing:2px">INVITE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 referral-image">
+                    <div class="card card-body border-0">
+                        <img src="Referral.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="object-container">
+            <div class="object object-left" data-aos="fade-up" data-aos-duration="1000">
+                <svg height="200pt" viewBox="0 0 600 600" width="200pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="0" y2="400">
+                        <stop offset="0" stop-color="#2af598" />
+                        <stop offset="1" stop-color="#009efd" />
+                    </linearGradient>
+                    <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333
+			                c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333z
+			                " fill="url(#a)" />
+                </svg>
+            </div>
+        </div>
+        <section class="bg-primary" id="skewed-bg">
+            <section class="container py-md-5 py-0" id="content-skewed-bg">
+                <div class="row justify-content-between mx-md-5 mx-1">
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-0 bg-transparent" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="Mock_up_image-1.png" width="500" height="400" class="img-fluid" />
+                            <img src="centralex-hero-1@2x.png" class="position-absolute portfolio-mobile-img"
+                                 width="250" height="400" style="left: 65%; top:40%" />
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-4">
+                        <div class="card border-0 bg-transparent">
+                            <div class="mx-1">
+                                <h1 class="mb-4 text-white create-folio-heading" data-aos="fade-up" data-aos-duration="1000">
+                                    Create your portfolio
+                                </h1>
+                                <ul class="list text-white" style="padding-inline-start:20px;">
+                                    <li data-aos="fade-up" data-aos-duration="1000">
+                                        <h4 class="mb-2">Trading for everyone</h4>
+                                        <p class="card-subtitle font-weight-light mb-4">
+                                            Easy to use trading platform for beginner and advanced traders.
+                                        </p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="1000">
+                                        <h4 class="mb-2">Compatative Rates</h4>
+                                        <p class="card-subtitle font-weight-light mb-4">
+                                            Start earning crypto with our compatative trading fees and two layer referral system.
+                                        </p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="1000">
+                                        <h4 class="mb-2">Being Innovative</h4>
+                                        <p class="card-subtitle font-weight-light mb-4">
+                                            Centralex is developing revolutionary products that will benefit the crypto-eco-system as whole.
+                                        </p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="1000">
+                                        <h4 class="mb-2">Account Trasparency</h4>
+                                        <p class="card-subtitle font-weight-light mb-4">
+                                            All traded assets are on a blockchain or tockenized real assets, which allows centralex to show full lequidity and backing.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="object-container">
+            <div class="object object-right" data-aos="zoom-in" data-aos-duration="1000">
+                <svg height="200pt" viewBox="0 0 600 600" width="200pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="0" y2="400">
+                        <stop offset="0" stop-color="#2af598" />
+                        <stop offset="1" stop-color="#009efd" />
+                    </linearGradient>
+                    <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333
+			                c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333z
+			                " fill="url(#a)" />
+                </svg>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
