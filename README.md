@@ -1,3 +1,2 @@
-Work sample UI.
+User interface work sample created for Quillhash Inc.
 
-This is my test repos.
